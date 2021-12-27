@@ -1,10 +1,12 @@
 FROM python:3.8.0-buster
 
 # Make a directory for our application
-WORKDIR D:\OsProject
+WORKDIR /application
 
-COPY requirements.txt .
-RUN pip install -r requirements.txt
+
+COPY project.py .
+RUN pip install -r project.py
+
 
 COPY /app .
 
