@@ -8,6 +8,6 @@ COPY project.py .
 RUN pip install -r project.py
 
 
-COPY /app .
+COPY /.github/workflows .
 
 CMD ["python", "project.py"]
